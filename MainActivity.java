@@ -1,4 +1,4 @@
-package com.example.fuelondemand;
+package com.example.deliveryboy;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,14 +16,12 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
 
     ImageView imageView;
-    TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-
 
         imageView = (ImageView)findViewById(R.id.imageView);
         //textView = (TextView)findViewById(R.id.textView7);
@@ -37,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onAnimationEnd(Animator animation) {
                 //super.onAnimationEnd(animation);
-               // textView.animate().alpha(1f).setDuration(800);
+                // textView.animate().alpha(1f).setDuration(800);
             }
         });
 
